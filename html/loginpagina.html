@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../scss/main.scss">
 </head>
 <body>
+<main>
+    <h2>Login</h2>
+    <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <p>Forgot your password? <a href="#" id="forgot-password-link">Click here</a></p>
+
+</main>
 
 </body>
 </html>
