@@ -13,7 +13,7 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Display the list items horizontally */
+    display: flex;
 }
 
 li {
@@ -22,5 +22,5 @@ li {
 
 a {
     text-decoration: none;
-    color: #fff; /* Link text color */
+    color: #fff;
 }

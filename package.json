@@ -1,7 +1,7 @@
 {
   "name": "werkpakket1",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proberen mijn best te doen voor dit werkpakket ;-; ",
   "main": "index.js",
   "scripts": {
     "dev": "sass --watch scss/main.scss:css/main.css"
