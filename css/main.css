@@ -1,26 +1,28 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 nav {
-    background-color: #ff23ff;
+  background-color: #ff23ff;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 li {
-    padding: 15px;
+  padding: 15px;
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
+
+/*# sourceMappingURL=main.css.map */
