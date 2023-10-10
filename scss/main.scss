@@ -1,3 +1,9 @@
+$colordarkest: #0D0D0D;
+$colorlightest: #F2F2F2;
+$lightgreen: #99BF60;
+$darkgreen: #0A4001;
+$darkblue: #253C59;
+
 $font-stack: Arial, sans-serif;
 
 * {
@@ -6,23 +12,37 @@ $font-stack: Arial, sans-serif;
   box-sizing: border-box;
   font-family: $font-stack;
 }
+main {
+
+}
 
 nav {
-  background-color: #ff23ff;
+  background-color: $colordarkest;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+
+    li {
+      padding: 15px;
+      &:hover {
+      background-color: $lightgreen;
+    }
+      a {
+        text-decoration: none;
+        color: $colorlightest;
+      }
+    }
+  }
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
 
-li {
-  padding: 15px;
-}
 
-a {
-  text-decoration: none;
-  color: #fff;
-}
+
+
+
+
+

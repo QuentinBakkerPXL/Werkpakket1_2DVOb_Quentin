@@ -6,23 +6,24 @@
 }
 
 nav {
-  background-color: #ff23ff;
+  background-color: #0D0D0D;
 }
-
-ul {
+nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
+  justify-content: right;
 }
-
-li {
+nav ul li {
   padding: 15px;
 }
-
-a {
+nav ul li:hover {
+  background-color: #99BF60;
+}
+nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #F2F2F2;
 }
 
 /*# sourceMappingURL=main.css.map */
