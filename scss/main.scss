@@ -1,8 +1,9 @@
 $colordarkest: #0D0D0D;
 $colorlightest: #F2F2F2;
-$lightgreen: #99BF60;
-$darkgreen: #0A4001;
+$lightgreen: #c76744;
+$darkgreen: #3271a8;
 $darkblue: #253C59;
+
 
 $font-stack: Arial, sans-serif;
 
@@ -39,24 +40,109 @@ nav {
   }
 }
 
+
 .wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   margin: 6% auto 0;
-  .single-card {
-    position: relative;
-    width: 280px;
-    height: 400px;
-    margin: 15px;
-    box-shadow: 0 2px 20px $darkblue;
-    overflow: hidden;
-    background: $colorlightest;
-    border-radius: 15px;
-    transition: all 0.8s ease-in-out;
+}
+
+.single-card {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 15px;
+  box-shadow: 0 2px 7px $darkblue;
+  transition: box-shadow 0.3s ease, transform 0.8s ease-in-out;
+  overflow: hidden;
+  background: $colorlightest;
+  border-radius: 15px;
+
+  &:hover {
+    transform: translateY(-10px);
   }
 }
+
+.img-area {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: $lightgreen;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  .single-card:hover & {
+    opacity: 1;
+  }
+}
+
+.add-to-cart, .view-details {
+  background-color: $colorlightest;
+  color: $colordarkest;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  margin-bottom: 10px;
+
+  &:hover {
+    background-color: $darkgreen;
+    color: $colorlightest;
+    border: none;
+  }
+}
+
+.info {
+  padding: 10px;
+  text-align: center;
+  color: $colordarkest;
+
+  h3 {
+    margin: 15px 0 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  .price {
+    margin: 0;
+    font-size: 30px;
+    color: $darkgreen;
+  }
+}
+
+
 
 
 
