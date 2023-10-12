@@ -1,7 +1,7 @@
-$colordarkest: #0D0D0D;
+$colordarkest: #212121;
 $colorlightest: #F2F2F2;
-$lightgreen: #c76744;
-$darkgreen: #3271a8;
+$orange: #c76744;
+$lightblue: #5b95d4;
 $darkblue: #253C59;
 
 
@@ -13,29 +13,49 @@ $font-stack: Arial, sans-serif;
   box-sizing: border-box;
   font-family: $font-stack;
 }
-main {
-
+body {
+background-color: $colorlightest;
 }
 
 nav {
   background-color: $colordarkest;
-
   ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: right;
-
     li {
       padding: 15px;
       &:hover {
-      background-color: $lightgreen;
+      background-color: $orange;
     }
       a {
         text-decoration: none;
         color: $colorlightest;
       }
+    }
+  }
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 60px;
+  .button {
+    background-color: $colordarkest;
+    border: none;
+    color: $colorlightest;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 16px;
+    &:hover {
+      background-color: $orange;
+      color: $colorlightest;
     }
   }
 }
@@ -54,10 +74,9 @@ nav {
   width: 280px;
   height: 400px;
   margin: 15px;
-  box-shadow: 0 2px 7px $darkblue;
   transition: box-shadow 0.3s ease, transform 0.8s ease-in-out;
   overflow: hidden;
-  background: $colorlightest;
+  background: $colordarkest;
   border-radius: 15px;
 
   &:hover {
@@ -70,13 +89,11 @@ nav {
   width: 100%;
   height: 200px;
   overflow: hidden;
-
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
-
     &:hover {
       transform: scale(1.1);
     }
@@ -93,10 +110,9 @@ nav {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: $lightgreen;
+  background-color: $orange;
   opacity: 0;
   transition: opacity 0.3s ease;
-
   .single-card:hover & {
     opacity: 1;
   }
@@ -114,9 +130,8 @@ nav {
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
   margin-bottom: 10px;
-
   &:hover {
-    background-color: $darkgreen;
+    background-color: $lightblue;
     color: $colorlightest;
     border: none;
   }
@@ -125,8 +140,7 @@ nav {
 .info {
   padding: 10px;
   text-align: center;
-  color: $colordarkest;
-
+  color: $colorlightest;
   h3 {
     margin: 15px 0 10px;
     font-size: 30px;
@@ -134,11 +148,10 @@ nav {
     text-transform: uppercase;
     font-family: 'Bebas Neue', sans-serif;
   }
-
   .price {
     margin: 0;
     font-size: 30px;
-    color: $darkgreen;
+    color: $lightblue;
   }
 }
 
