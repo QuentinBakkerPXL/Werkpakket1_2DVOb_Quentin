@@ -20,7 +20,7 @@ body {
 }
 
 main {
-  margin: 0 11% 0 11%;
+  margin: 11% 11% 11% 11%;
 }
 
 
@@ -58,13 +58,23 @@ main {
   }
 }
 
+//homepage blur ------
 
+.bg-image {
+  background-image: url("../assets/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 1792px;
+  height: 1024px;
+  position: relative;
+}
 
 
 // tekst ----
 .introductie {
   padding: 20px 0 20px 0;
-  padding-top: 40%;
+  padding-top: 30%;
 
   .omschrijvingoverzicht {
     font-size: 25px;
@@ -91,7 +101,7 @@ main {
     display: inline-block;
     margin: 4px 2px;
     font-size: 17px;
-    border-radius: 16px;
+    border-radius: 25px;
     &:hover {
       background-color: $orange;
       color: $colorlightest;
@@ -161,7 +171,7 @@ main {
   background-color: $colorlightest;
   color: $colordarkest;
   padding: 10px 15px;
-  border-radius: 4px;
+  border-radius: 25px;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
@@ -368,7 +378,7 @@ footer {
 
       &:hover {
         i {
-          color: aqua;
+          color: $orange;
         }
       }
     }
@@ -383,6 +393,99 @@ footer {
   }
 }
 
+
+.product-details {
+  max-width: 1200px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px auto;
+  .product-img {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: flex;
+    }
+  }
+  .product-text {
+    background-color: #ffffff;
+    padding: 60px;
+    position: relative;
+    .product-category {
+      color: $labelcolor;
+      font-size: 0.9rem;
+    }
+    h3 {
+      color: #252525;
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin: 10px 0px;
+    }
+    .product-price {
+      font-size: 1.6rem;
+      color: #252525;
+      font-weight: 500;
+    }
+    p {
+      margin: 30px 0px;
+      color: $labelcolor;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+    }
+    .product-button {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 30px 0px;
+      margin-bottom: 20px;
+      grid-gap: 20px;
+      a {
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        font-size: 0.9rem;
+        border-radius: 25px;
+      }
+      .add-cart-btn {
+        background-color: $colordarkest;
+        color: $colorlightest;
+        &:hover {
+          background-color: $orange;
+          color: $colorlightest;
+        }
+      }
+      .checkout-btn {
+        background-color: #f1f1f1;
+        color: #252525;
+        &:hover {
+          background-color: $lightblue;
+          color: $colorlightest;
+        }
+      }
+    }
+  }
+  .help-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: #181818;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    text-transform: lowercase;
+    &:hover {
+      color: $lightblue;
+    }
+  }
+}
 
 
 
