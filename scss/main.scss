@@ -58,20 +58,48 @@ main {
   }
 }
 
-//homepage blur ------
+//homepage ------
 
 .bg-image {
   background-image: url("../assets/Background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 1792px;
+  width: 100%;
   height: 1024px;
   position: relative;
+  .filter-blur {
+    background: rgba(240, 227, 227, 0.5);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    width: 100%;
+    height: 1024px;
+  }
+}
+.banner  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  h1 {
+    font-size: 75px;
+    color: $colordarkest;
+    position: absolute;
+    margin-bottom: 60%;
+  }
+}
+
+h2 {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
 }
 
 
-// tekst ----
+// tekst overzichtpagina----
 .introductie {
   padding: 20px 0 20px 0;
   padding-top: 30%;
@@ -186,7 +214,6 @@ main {
     border: none;
   }
 }
-
 .info {
   padding: 10px;
   text-align: center;
@@ -327,7 +354,7 @@ footer {
   right: 0;
   background: #111;
   height: auto;
-  width: 100vw;
+  width: 100%;
 
   padding-top: 40px;
   color: #fff;
@@ -486,6 +513,7 @@ footer {
     }
   }
 }
+
 
 
 
